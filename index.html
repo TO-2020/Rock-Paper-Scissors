@@ -4,18 +4,15 @@
     <title>Rock,Paper,Scissors</title> 
     <link href="app.css" rel="stylesheet">   
     </head>
-
     <body>
         <h1 align="center">Rock Paper Scissors</h1>
         <h2 align="center">The computer has made it's decision, now input yours.</h2>
         <div>
-            <div>
-                <form oninput="main(playerchoice.value,computerSelection())">
-                <label for="playerchoice">Your choice:</label>
-                <input type="text" id="playerchoice" name="playerchoice">
-                <button type="button">Submit</button>
-                </form>
-            </div>
+            <form>
+            <label for="playerchoice">Your choice:</label>
+            <input type="text" id="playerchoice" name="playerchoice">
+            <button type="button" onclick="mainplay()">Play</button>
+            </form>
         <p>Computer's selection is: <span id="computer"></span></p>
         <p>Your selection is: <span id="player"></span></p>
         <p>Result: <span id="result"></span></p>
