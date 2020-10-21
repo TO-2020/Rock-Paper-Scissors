@@ -21,9 +21,9 @@ function Transform(Selection) {
     }};
 
 mainplay = () => {
-    let player = JSON.stringify(document.getElementById("playerchoice").innerHTML);
+    let playerValue = document.getElementById("playerchoice").value;
     let computerValue = computerSelection();
-    let p = Transform(player);
+    let p = Transform(playerValue);
     let c = Transform(computerValue);
     let r = "Error";
     if(p===c){
@@ -35,8 +35,7 @@ mainplay = () => {
     else if((p===1 && c===2)||(p===2 && c===3)||(p===3 && c===1)){
         r = "The computer wins.";
     };
-    console.log(p,c,r);
-    document.getElementById("player").innerHTML = player;
+    document.getElementById("player").innerHTML = playerValue;
     document.getElementById("computer").innerHTML = computerValue;
     document.getElementById("result").innerHTML = r;
     
