@@ -25,7 +25,7 @@ mainplay = () => {
     let computerValue = computerSelection();
     let p = Transform(playerValue);
     let c = Transform(computerValue);
-    let r = "Error";
+    let r = "Error. You need to input a valid selection.";
     if(p===c){
         r = "It is a draw.";
     }
